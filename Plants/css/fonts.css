@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Inika";
+    src: url(../fonts/Inika-Regular.ttf);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
