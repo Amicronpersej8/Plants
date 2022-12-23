@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -609,8 +610,6 @@ footer {
 .all_rights_reserved {
     height: 50px;
 }
-
-.RS {}
 
 .social_media {
     right: 0;
