@@ -1,0 +1,1550 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1440px;
+    font-size: 10px;
+}
+
+h1 {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 50px;
+    color: #717171;
+}
+
+.header {
+    position: relative;
+    padding-top: 42px;
+    width: 1440px;
+    height: 134px;
+    background: #EDF2EC;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    transition: .5s linear;
+    z-index: 20;
+}
+
+.header_active {
+    background: #499A18;
+}
+
+.wrapper {
+    max-width: 1222px;
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_navigation {
+    width: 465px;
+    height: 21px;
+    margin-right: 109px;
+}
+
+.header_item {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    color: #010201;
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation:last-child {
+    margin-right: 0;
+}
+
+.header_link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header_link:hover {
+    font-size: larger;
+    transition: 0.2s;
+    color: #E06733;
+}
+
+.burger {
+    display: none;
+    width: 40px;
+    height: 24px;
+    position: relative;
+    margin: 15px 0 0 10px;
+}
+
+.burger_line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #717171;
+    position: absolute;
+}
+
+.burger_line_first {
+    top: 0;
+}
+
+.burger_line_second {
+    top: 33.33%;
+    transform: translateY(-25%);
+}
+
+.burger_line_third {
+    top: 66.66%;
+    transform: translateY(-60%);
+}
+
+.burger_line_forth {
+    bottom: 0;
+}
+
+.krestik {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+}
+
+.closeline {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+}
+
+.closeline:first-child {
+    transform: translateY(50%) rotate(45deg);
+}
+
+.closeline:last-child {
+    transform: translateY(50%) rotate(-45deg);
+}
+
+.logo {
+    margin-top: 10px;
+    width: 79px;
+    height: 21px;
+}
+
+.plants {
+    text-decoration: none;
+}
+
+.welcome {
+    position: relative;
+    width: 1440px;
+    height: 532px;
+    background: #EDF2EC;
+}
+
+.leaves {
+    width: 448px;
+    height: 411px;
+    display: inline-block;
+    margin-top: 62px;
+}
+
+.welcome_section {
+    width: 549px;
+    height: 340px;
+    display: inline-block;
+    margin-left: 220px;
+    vertical-align: top;
+    margin-top: 98px;
+}
+
+
+.welcome_text {
+    position: relative;
+    width: 534.89px;
+    height: 105px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 35px;
+    color: #636060;
+    margin-top: 42px;
+    margin-bottom: 48px;
+}
+
+.button {
+    position: relative;
+    width: 158px;
+    height: 44px;
+}
+
+.button_start {
+    box-sizing: border-box;
+    position: absolute;
+    width: 158px;
+    height: 44px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.button_start:hover {
+    background: #E06733;
+    color: white;
+    transition: 300ms;
+}
+
+.button_text {
+    position: absolute;
+    width: 108.49px;
+    height: 19px;
+    left: 24px;
+    top: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px;
+}
+
+.about {
+    position: relative;
+    width: 1440px;
+    height: 666px;
+    left: 0px;
+
+}
+
+.about_section {
+    position: relative;
+    height: 479px;
+    top: 93px;
+}
+
+.about_us_section {
+    position: absolute;
+    width: 605px;
+    height: 350px;
+    top: 68px;
+}
+
+.gardeners_text {
+    position: absolute;
+    width: 463px;
+    height: 102px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    text-align: left;
+}
+
+.about_us_text {
+    position: absolute;
+    width: 605px;
+    height: 208px;
+    top: 142px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+}
+
+.houseplant {
+    position: absolute;
+    width: 464px;
+    height: 479px;
+    left: 758px;
+}
+
+.service {
+    position: relative;
+    width: 1440px;
+    height: 1300px;
+    background: #EDF2EC;
+}
+
+.services_content {
+    position: relative;
+    width: 1007px;
+    height: 94px;
+    top: 40px;
+    display: inline-block;
+}
+
+.service_text_block {
+    position: relative;
+    width: 306px;
+    height: 94px;
+    display: inline-block;
+}
+
+.service_text {
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.services_btns {
+    position: absolute;
+    top: 23px;
+    width: 559px;
+    height: 50px;
+    right: 0;
+    display: inline-block;
+
+}
+
+.button1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 161px;
+    height: 50px;
+    left: 398px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+}
+
+.button1:hover {
+    background: #E06733;
+    transition: 300ms;
+    color: white;
+}
+
+.button2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 161px;
+    height: 50px;
+    left: 195px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+}
+
+.button2:hover {
+    background: #E06733;
+    transition: 300ms;
+    color: white;
+}
+
+.button3 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 161px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+}
+
+.button3:hover {
+    background: #E06733;
+    transition: 300ms;
+    color: white;
+}
+
+.services {
+    position: relative;
+    width: 1222px;
+    height: 955px;
+    top: 134px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.service_item {
+    width: 330px;
+    height: 450px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.service_item_text {
+    position: relative;
+    left: 105px;
+    top: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+}
+
+.service_item_text1 {
+    position: relative;
+    left: 30px;
+    top: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+}
+
+.service_item_div {
+    box-sizing: border-box;
+    position: relative;
+    width: 330px;
+    height: 100px;
+    top: -43px;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.prices {
+    position: relative;
+    width: 1440px;
+    height: 560px;
+    background: #FFFFFF;
+}
+
+.prices_div {
+    width: 332px;
+    height: 282px;
+    top: 149px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.prices_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 48px;
+    margin-top: 40px;
+    color: #000000;
+}
+
+.prices_items {
+    position: relative;
+    width: 250px;
+    height: 214px;
+    margin: 34px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.price_item {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background: #EDF2EC;
+    border-radius: 20px;
+
+}
+
+.basics {
+    left: 194px;
+    top: 17px;
+    position: relative;
+}
+
+.basics_text {
+    position: absolute;
+    left: 30px;
+    top: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+
+}
+
+.text_call_us {
+    position: absolute;
+    left: 879px;
+    top: -10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 50px;
+    width: 452px;
+    height: 191px;
+    text-align: right;
+    color: #000000;
+}
+
+.btn_call_us {
+    box-sizing: border-box;
+    width: 162px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    background-color: white;
+    text-align: center;
+    margin-top: 38px;
+    color: #E06733;
+}
+
+.btn_call_us:hover {
+    background: #E06733;
+    transition: 300ms;
+    color: white;
+}
+
+.leafs {
+    background-image: url(../image/photo/leafs1.png);
+    position: absolute;
+    top: 210px;
+    left: 1179px;
+    width: 152px;
+    height: 174.99px;
+}
+
+.contacts {
+    position: relative;
+    width: 1440px;
+    height: 542px;
+    background: #EDF2EC;
+    margin-top: 8px;
+}
+
+.woman {
+    margin-top: 45px;
+}
+
+.contact_us {
+    position: absolute;
+    width: 195px;
+    height: 51px;
+    left: 622px;
+    top: 60px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.contacts_container {
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 881px;
+    top: 148px;
+}
+
+.city_select {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    height: 50px;
+    width: 450px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    background-image: url(../image/icons/accordion_btn.svg);
+    background-repeat: no-repeat;
+    background-position: right 3rem top 50%;
+    background-size: 1em 100%;
+    appearance: none;
+    padding-left: 10px;
+}
+
+.city_select:hover {
+    background-color: #DCE9D9;
+    line-height: 40px;
+
+
+    letter-spacing: 0.05em;
+}
+
+
+.option_first {
+    background-color: #D6E7D2;
+    color: #717171;
+}
+
+.option_first:hover {
+    text-decoration: underline;
+    background-color: #D6E7D2;
+    color: #717171;
+}
+
+.city_select:focus {
+    color: #499A18;
+}
+
+footer {
+    display: inline;
+    width: 1440px;
+    height: 130px;
+    background: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    width: 1222px;
+    height: 50px;
+    margin: 40px 0 40px 0;
+}
+
+.all_rights_reserved {
+    height: 50px;
+}
+
+.social_media {
+    right: 0;
+    width: 188px;
+    height: 50px;
+    text-align: right;
+    top: calc(50% - 50px/2);
+    list-style-type: none;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+
+.a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.icon:hover {
+    scale: 1.2;
+}
+
+/* media */
+@media screen and (max-width: 768px) {
+
+    .header {
+        position: relative;
+        padding-top: 30px;
+        width: 768px;
+        height: 117px;
+    }
+
+    .wrapper {
+        max-width: 668px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        display: flex;
+        box-sizing: border-box;
+
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .header_navigation {
+        position: relative;
+        left: 100px;
+        top: -7px;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 77px;
+        height: 21px;
+    }
+
+    .navigation {
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        top: 50%;
+    }
+
+    .navigation:last-child {
+        margin-right: 0;
+    }
+
+    .welcome {
+        width: 768px;
+        height: 420px;
+        background: #EDF2EC;
+    }
+
+    .leaves {
+        position: relative;
+        top: 40px;
+        left: 388px;
+        width: 280px;
+        height: 254px;
+        margin: 0;
+    }
+
+    .leaves_image {
+        width: 280px;
+    }
+
+    .welcome_section {
+        position: relative;
+        width: 346px;
+        height: 310px;
+        margin-left: 0;
+        margin-top: 0;
+        left: -280px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .welcome_text {
+        position: relative;
+        width: 341px;
+        height: 105px;
+        top: 0px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 25px;
+        color: #636060;
+    }
+
+    .about {
+        position: relative;
+        width: 768px;
+        height: 783px;
+        left: 0px;
+
+    }
+
+    .about_section {
+        position: relative;
+        height: 700px;
+        top: 40px;
+    }
+
+    .about_us_section {
+        position: absolute;
+        width: 668px;
+        height: 350px;
+        top: 0px;
+    }
+
+    .gardeners_text {
+        position: absolute;
+        width: 528px;
+        height: 102px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+        color: #499A18;
+        display: block;
+        margin-left: 40px;
+    }
+
+    .about_us_text {
+        position: absolute;
+        width: 668px;
+        height: 208px;
+        top: 142px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #636060;
+    }
+
+    .houseplant {
+        position: absolute;
+        width: 250px;
+        height: 258px;
+        left: 209px;
+        top: 390px;
+    }
+
+    .service {
+        position: relative;
+        width: 768px;
+        height: 1780px;
+        background: #EDF2EC;
+    }
+
+    .services_content {
+        position: relative;
+        width: 559px;
+        height: 200px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        display: block;
+        top: 60px;
+    }
+
+    .service_text_block {
+        position: relative;
+        margin-bottom: 40px;
+        width: 306px;
+        height: 94px;
+        display: block;
+    }
+
+    .service_text {
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        color: #499A18;
+    }
+
+    .services_btns {
+        position: relative;
+        margin-bottom: 40px;
+        top: 0px;
+        width: 559px;
+        height: 50px;
+        right: 0;
+    }
+
+    .services {
+        position: relative;
+        width: 668px;
+        height: 1426px;
+        margin-top: 130px;
+        top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    .prices {
+        position: relative;
+        width: 768px;
+        height: 585px;
+        background: #FFFFFF;
+    }
+
+    .prices_div {
+        position: relative;
+        width: 332px;
+        height: 282px;
+        top: 0px;
+        border: 1px solid #E3E1D5;
+        border-radius: 20px;
+        margin-top: 60px;
+        display: inline-block;
+    }
+
+    .prices_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 42px;
+        margin-top: 40px;
+        color: #000000;
+    }
+
+    .prices_items {
+        position: relative;
+        width: 250px;
+        height: 214px;
+        margin: 34px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .price_item {
+        position: relative;
+        width: 250px;
+        height: 50px;
+        background: #EDF2EC;
+        border-radius: 20px;
+
+    }
+
+    .text_call_us {
+        position: absolute;
+        left: 422px;
+        top: 0px;
+        margin-top: 90px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 35px;
+        width: 296px;
+        height: 77px;
+        text-align: right;
+        color: #000000;
+    }
+
+    .btn_call_us {
+        box-sizing: border-box;
+        width: 162px;
+        height: 50px;
+        border: 1px solid #E06733;
+        border-radius: 5px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        background-color: white;
+        text-align: center;
+        margin-top: 38px;
+        color: #E06733;
+    }
+
+    .leafs {
+        background-image: url(../image/photo/leafs1.png);
+        position: absolute;
+        top: 332px;
+        left: 566px;
+        width: 152px;
+        height: 175px;
+    }
+
+    .contacts {
+        position: relative;
+        width: 768px;
+        height: 739px;
+        background: #EDF2EC;
+        margin-top: 8px;
+    }
+
+    .woman {
+        position: relative;
+        left: 234px;
+        top: 385px;
+        width: 249px;
+
+    }
+
+    .contact_us {
+        position: absolute;
+        width: 192px;
+        height: 51px;
+        left: 288px;
+        top: 40px;
+        margin-bottom: 100px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+        color: #499A18;
+    }
+
+    .contacts_container {
+        position: absolute;
+        width: 450px;
+        height: 50px;
+        left: 159px;
+        top: 191px;
+        margin-bottom: 100px;
+    }
+
+
+    footer {
+        position: relative;
+        display: block;
+        width: 668px;
+        height: 200px;
+        background: #FFFFFF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin: 0 auto;
+        padding: 33px 279px 33px 279px;
+    }
+
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 210px;
+        height: 134px;
+        margin: 0 auto;
+    }
+
+    .RS {
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .header {
+        position: relative;
+        padding-top: 0px;
+        width: 380px;
+        height: 96px;
+    }
+
+    .wrapper {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header_navigation {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background-color: #717171;
+        color: #DCE9D9;
+        transform: translateX(100%);
+        transition: .8s;
+    }
+
+    .header_navigation_active{
+        transform: translateX(0%);
+    }
+
+    .logo {
+        display: inline-block;
+        width: 77px;
+        height: 21px;
+    }
+
+    .navigation {
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        top: 10%;
+        margin-left: 30px;
+    }
+
+    .navigation:last-child {
+        margin-right: 0;
+    }
+
+    .header_item {
+        font-size: 4rem;
+        line-height: 60px;
+        color: #D6E7D2;
+    }
+
+    .header_link {
+        text-decoration: none;
+        color: #D6E7D2;
+    }
+
+    .header_link:hover {
+        font-size: 100%;
+        transition: 0.2s;
+        color:#499A18;
+    }
+
+    .krestik {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+        color: #499A18;
+    }
+
+    .welcome {
+        position: relative;
+        width: 380px;
+        height: 300px;
+        background: #EDF2EC;
+        padding-top: 24px;
+    }
+
+    .leaves {
+        display: none;
+    }
+
+    .leaves_image {
+        width: 280px;
+    }
+
+    .welcome_section {
+        position: relative;
+        width: 330px;
+        height: 252px;
+        left: 0;
+        top: 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 35px;
+        margin-bottom: 24px;
+    }
+
+    .welcome_text {
+        position: relative;
+        top: -20px;
+        width: 314px;
+        height: 105px;
+        margin-bottom: 0px;
+    }
+
+    .button {
+        position: relative;
+        top: 0px;
+        width: 100px;
+        height: 34px;
+    
+    }
+
+    .button_start {
+        width: 100px;
+        height: 34px;
+    }
+
+    .button_text {
+        width: 64px;
+        height: 18px;
+        left: 0px;
+        top: 0px;
+        font-size: 10px;
+        line-height: 20px;
+        margin: 5px 18px;
+    }
+
+    .about {
+        position: relative;
+        width: 380px;
+        height: 516px;
+        left: 0px;
+    }
+
+    .about_section {
+        position: relative;
+        height: 455px;
+        top: 30px;
+    }
+
+    .about_us_section {
+        position: relative;
+        width: 330px;
+        height: 300px;
+        top: 0px;
+    }
+
+    .gardeners_text {
+        position: relative;
+        width: 288px;
+        height: 58px;
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+        color: #499A18;
+        margin-left: 16px;
+    }
+
+    .about_us_text {
+        position: relative;
+        width: 330px;
+        height: 228px;
+        top: 0px;
+        margin-top: 21px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 25px;
+        color: #636060;
+    }
+
+    .houseplant {
+        position: relative;
+        width: 147px;
+        height: 150px;
+        left: 90px;
+        top: 20px;
+    }
+
+    .service {
+        position: relative;
+        width: 380px;
+        height: 3150px;
+        background: #EDF2EC;
+    }
+
+    .services_content {
+        position: relative;
+        width: 330px;
+        height: 210px;
+        margin-top: 0;
+        display: block;
+        top: 30px;
+    }
+
+    .services_img {
+        width: 100%;
+    }
+
+    .service_text_block {
+        position: relative;
+        margin-bottom: 35px;
+        width: 187px;
+        height: 69px;
+        display: block;
+    }
+
+    .service_text {
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 32px;
+        color: #499A18;
+    }
+
+    .services_btns {
+        position: relative;
+        margin-bottom: 40px;
+        top: 0px;
+        width: 252px;
+        height: 79px;
+        right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    .button1 {
+        position: relative;
+        box-sizing: border-box;
+        width: 121px;
+        height: 35px;
+        left: 0;
+        font-size: 15px;
+        line-height: 20px;
+        color: #E06733;
+    }
+    
+    .button1:hover {
+        background: #E06733;
+        transition: 300ms;
+        color: white;
+    }
+    
+    .button2 {
+        position: relative;
+        box-sizing: border-box;
+        width: 121px;
+        height: 35px;
+        left: 0;
+        font-size: 15px;
+        line-height: 20px;
+        color: #E06733;
+    }
+    
+    .button2:hover {
+        background: #E06733;
+        transition: 300ms;
+        color: white;
+    }
+    
+    .button3 {
+        box-sizing: border-box;
+        position: relative;
+        width: 121px;
+        height: 35px;
+        left: 0;
+        font-size: 15px;
+        line-height: 20px;
+        color: #E06733;
+    }
+    
+    .button3:hover {
+        background: #E06733;
+        transition: 300ms;
+        color: white;
+    }
+
+    .services {
+        position: relative;
+        width: 280px;
+        height: 2870px;
+        margin: 0 auto;
+        top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    .service_item {
+        width: 279px;
+        height: 450px;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+
+    .service_item_div {
+        box-sizing: border-box;
+        position: relative;
+        width: 279px;
+        height: 100px;
+        top: -63px;
+        border: 1px solid #E3E1D5;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .service_item_text {
+        position: relative;
+        left: 83px;
+        top: 10px;
+    }
+
+    .service_item_text1 {
+        position: relative;
+        left: 30px;
+        top: 22px;
+        width: 212px;
+    }
+
+    .prices {
+        position: relative;
+        width: 382px;
+        height: 512px;
+        background: #FFFFFF;
+    }
+
+    .prices_div {
+        width: 224px;
+        height: 235px;
+        top: 0px;
+        border: 1px solid #E3E1D5;
+        border-radius: 20px;
+        margin: 40px auto;
+        display: block;
+    }
+
+    .prices_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 20px;
+        margin-top: 24px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .prices_items {
+        position: relative;
+        width: 180px;
+        height: 177px;
+        margin: 29px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .price_item {
+        position: relative;
+        width: 180px;
+        height: 49px;
+        background: #EDF2EC;
+        border-radius: 20px;
+
+    }
+
+    .basics {
+        left: 140px;
+        top: 17px;
+    }
+
+    .text_call_us {
+        left: 76px;
+        top: 320px;
+        margin: 0px auto;
+        font-size: 2rem;
+        line-height: 35px;
+        width: 230px;
+        height: 77px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .btn_call_us {
+        display: block;
+        box-sizing: border-box;
+        width: 121px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 14px auto 0;
+    }
+
+    .leafs {
+        display: none;
+    }
+
+    .contacts {
+        position: relative;
+        width: 378px;
+        height: 445px;
+        background: #EDF2EC;
+        margin-top: 8px;
+    }
+
+    .woman {
+        position: relative;
+        left: 0px;
+        top: 141px;
+        width: 100px;
+        margin-left: 110px;
+
+    }
+
+    .contact_us {
+        position: relative;
+        width: 192px;
+        height: 34px;
+        left: 96px;
+        top: 25px;
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    .contacts_container {
+        position: absolute;
+        width: 297px;
+        height: 50px;
+        left: 41px;
+        top: 139px;
+    }
+
+
+    footer {
+        position: relative;
+        display: block;
+        width: 380px;
+        height: 161px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin: 0 auto;
+        padding: 22px 85px;
+    }
+
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 210px;
+        height: 134px;
+        margin: 0 auto;
+    }
+
+    .RS {
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+}
