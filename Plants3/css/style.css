@@ -357,6 +357,12 @@ h1 {
     background: #E06733;
     transition: 300ms;
     color: white;
+    cursor: pointer;
+}
+
+.button_pushed{
+    background: #E06733;
+    color: white;
 }
 
 .button2 {
@@ -418,6 +424,10 @@ h1 {
     height: 450px;
     border-radius: 20px 20px 0px 0px;
 
+}
+
+.blured {
+    filter: blur(2px);
 }
 
 .service_item_text {
